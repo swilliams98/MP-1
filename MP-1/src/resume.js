@@ -20,11 +20,11 @@ function operation(type){
         case "divide":
             if (Number(second)===0) {
                 document.getElementById("output").innerHTML = "You cannot divide by 0!";
-                break;
             } else{
                 result = Number(first)/Number(second);
-                break;
+
             }
+            break;
         case "pow":
             result = 1;
             for (let i = 0; i< Math.abs(Number(second));i++) {
@@ -51,6 +51,7 @@ function displayResult(result){
     }
     document.getElementById("output").innerHTML = "Result: " + String(result);
 }
+
 function resetError(){
     document.getElementById("output").innerHTML = "";
 }
