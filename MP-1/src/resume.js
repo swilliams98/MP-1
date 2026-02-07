@@ -19,7 +19,7 @@ function operation(type){
             break;
         case "divide":
             if (Number(second)===0) {
-                document.getElementById("error").innerHTML = "You cannot divide by 0!";
+                document.getElementById("output").innerHTML = "You cannot divide by 0!";
                 break;
             } else{
                 result = Number(first)/Number(second);
@@ -52,5 +52,5 @@ function displayResult(result){
     document.getElementById("output").innerHTML = "Result: " + String(result);
 }
 function resetError(){
-    document.getElementById("error").innerHTML = "";
+    document.getElementById("output").innerHTML = "";
 }
