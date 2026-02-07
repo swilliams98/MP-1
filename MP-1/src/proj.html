@@ -6,29 +6,48 @@
         <link rel = "stylesheet" type= "text/css" href = "./index.css">
     </head>
     <body>
-        <header>
-            <h1>Ren's Resume</h1>
-            <p>A website showcasing Ren's resume</p>
-        </header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a>Education</a></li>
-                <li><a>Experience</a></li>
-                <li><a>Projects</a></li>
-                <li><a>Certifications</a></li>
-            </ul>
-        </nav>
-        <main>
-            <h2>Projects</h2>
-            <ul>
-                <li>
 
-                </li>
-            </ul>
-        </main>
-        <footer>
-            <p> All Rights Reserved &#169;</p>
-        </footer>
+        <div id = "page-wrapper">
+            <header>
+                <h1>Ren's Resume</h1>
+                <p>A website showcasing Ren's resume</p>
+            </header>
+            <div id = "nav-main">
+                <nav>
+                    <ul>
+                        <li><a href = "index.html">Home</a></li>
+                        <li><a href = "edu.html">Education</a></li>
+                        <li><a href = "exp.html">Experience</a></li>
+                        <li><a href = "proj.html">Projects</a></li>
+                        <li><a href = "certs.html">Certifications</a></li>
+                        <li><a href = "ref.html">References</a></li>
+                    </ul>
+                </nav>
+                <main>
+                    <h2 class = "title">Projects</h2>
+                        <div id = "calculator-wrapper">
+                        <h2 id = "calc-title">James Calculator</h2>
+
+                        <label for="first">First number: <input id = "first"></label>
+                        <label for="second"> Second number: <input id = "second"></label>
+                        <div id = "operations">
+                            <button id = "add" onclick = "operation(`add`)">+</button>
+                            <button id = "sub" onclick = "operation(`subtract`)">-</button>
+                            <button id = "multiply" onclick = "operation(`multiply`)">*</button>
+                            <button id = "divide" onclick = "operation(`divide`)">/</button>
+                            <button id = "pow" onclick = "operation(`pow`)">**</button>
+                            <button id = "clear" onclick= "clearText()">Clear</button>
+                        </div>
+                        <h3 id = "error"></h3>
+                        <h3 id = "output">Result: </h3>
+
+                        </div>
+                </main>
+            </div>
+            <footer>
+                <p> All Rights Reserved by Serenity Williams &#169;</p>
+            </footer>
+            <script src = "./resume.js"></script>
+        </div>
     </body>
 </html>
